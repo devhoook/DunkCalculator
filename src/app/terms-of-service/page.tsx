@@ -68,6 +68,8 @@ export default function TermsOfServicePage() {
             <span>&bull;</span>
             <Link href="/about" className="hover:text-primary transition-colors">About</Link>
             <span>&bull;</span>
+            <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
+            <span>&bull;</span>
             <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             <span>&bull;</span>
             <p>&copy; {new Date().getFullYear()} FreeDunkCalculator.com. All Rights Reserved.</p>

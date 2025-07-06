@@ -51,6 +51,8 @@ export default function Home() {
         <div className="flex justify-center items-center gap-4 flex-wrap">
           <Link href="/about" className="hover:text-primary transition-colors">About</Link>
           <span>&bull;</span>
+          <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
+          <span>&bull;</span>
           <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
           <span>&bull;</span>
           <Link href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>

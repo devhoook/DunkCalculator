@@ -97,6 +97,8 @@ export default function PrivacyPolicyPage() {
             <span>&bull;</span>
             <Link href="/about" className="hover:text-primary transition-colors">About</Link>
             <span>&bull;</span>
+            <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
+            <span>&bull;</span>
             <Link href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
             <span>&bull;</span>
             <p>&copy; {new Date().getFullYear()} FreeDunkCalculator.com. All Rights Reserved.</p>
