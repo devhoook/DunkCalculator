@@ -1,6 +1,5 @@
 import DunkCalculator from '@/components/dunk-calculator';
 import Faq from '@/components/faq';
-import VerticalJumpArticle from '@/components/vertical-jump-article';
 import Link from 'next/link';
 
 const BasketballIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -45,13 +44,14 @@ export default function Home() {
       <main className="flex-grow container mx-auto px-4 pb-12">
         <div className="space-y-12 md:space-y-16">
           <DunkCalculator />
-          <VerticalJumpArticle />
           <Faq />
         </div>
       </main>
       <footer className="text-center py-6 text-sm text-muted-foreground">
         <div className="flex justify-center items-center gap-4 flex-wrap">
           <Link href="/about" className="hover:text-primary transition-colors">About</Link>
+          <span>&bull;</span>
+          <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
           <span>&bull;</span>
           <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
           <span>&bull;</span>

@@ -47,6 +47,8 @@ export default function AboutPage() {
          <div className="flex justify-center items-center gap-4 flex-wrap">
             <Link href="/" className="hover:text-primary transition-colors">Back to Calculator</Link>
             <span>&bull;</span>
+            <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
+            <span>&bull;</span>
             <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
             <span>&bull;</span>
             <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>

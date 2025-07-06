@@ -29,6 +29,8 @@ export default function ContactPage() {
             <span>&bull;</span>
             <Link href="/about" className="hover:text-primary transition-colors">About</Link>
             <span>&bull;</span>
+            <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
+            <span>&bull;</span>
             <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             <span>&bull;</span>
             <Link href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
