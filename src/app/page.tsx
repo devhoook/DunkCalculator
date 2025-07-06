@@ -1,5 +1,6 @@
 import DunkCalculator from '@/components/dunk-calculator';
 import ProgressTracker from '@/components/progress-tracker';
+import VerticalJumpArticle from '@/components/vertical-jump-article';
 import Link from 'next/link';
 
 const BasketballIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -41,6 +42,7 @@ export default function Home() {
       <main className="flex-grow container mx-auto px-4 pb-12">
         <div className="space-y-12 md:space-y-16">
           <DunkCalculator />
+          <VerticalJumpArticle />
           <ProgressTracker />
         </div>
       </main>
