@@ -1,5 +1,6 @@
 import DunkCalculator from '@/components/dunk-calculator';
 import ProgressTracker from '@/components/progress-tracker';
+import Link from 'next/link';
 
 const BasketballIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -44,7 +45,11 @@ export default function Home() {
         </div>
       </main>
       <footer className="text-center py-6 text-sm text-muted-foreground">
-        <p>&copy; {new Date().getFullYear()} Leap Dunk Pro. All Rights Reserved.</p>
+        <div className="flex justify-center items-center gap-4">
+          <Link href="/about" className="hover:text-primary transition-colors">About</Link>
+          <span>&bull;</span>
+          <p>&copy; {new Date().getFullYear()} Leap Dunk Pro. All Rights Reserved.</p>
+        </div>
       </footer>
     </div>
   );
