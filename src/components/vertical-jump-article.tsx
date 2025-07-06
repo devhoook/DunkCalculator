@@ -70,6 +70,32 @@ export default function VerticalJumpArticle() {
           <p>
             Meanwhile, Michael Jordan had a reported 48" vertical, but that’s still short of the amazing Kadour Ziani, the world record holder at 60" vertical (though a lot of places say 56"). Not bad for a guy who’s 5’11".
           </p>
+
+          <h3 className="text-2xl font-bold font-headline pt-4 border-t mt-6">Vertical Jump Test Protocols</h3>
+          <p>
+            How do you know how high you can jump? What is a valid test for vertical jump? You might think it’s obvious, but in fact different test methods give hugely different results, as do different jump protocols or rules.
+          </p>
+          <p>
+            Some jump tests allow an arm swing, and some require the hands to remain on the hips. Some allow an "approach" such as a running start, and some do not. Some tests involve force plates, measuring takeoff velocity, calculating true body mass center of gravity, correcting for pre-takeoff changes or not and so forth.
+          </p>
+          <p>
+            Just to illustrate the issue involved in the last case, let’s assume a test is based on center of gravity displacement. If I stand on the ground and do not move my feet at all, but do throw my hands over my head, my center of gravity will have risen a bit, but truly my vertical leap should be measured at zero.
+          </p>
+          <p>
+            As it turns out, the many different test methods result in, unsurprisingly, different values for vertical jump even when measuring the same performance.
+          </p>
+          <p>
+            The most common measurement is the so-called Sargent Test. This is the simplest and most straight-forward test. You reach as high has you can on the wall or board and set a mark. Then you chalk up your hand, jump for all you’re worth and slap the wall again, leaving a chalk mark at your high point. Measure the difference and that’s your vertical. You can use this method for either running or standing jumps. It’s the most common way to measure and devices like the Vertec Jump Training system avoid the need to mess up the walls (it’s basically a set of arms that stick out from a pole and the highest arm you touch measures your leap).
+          </p>
+          <p>
+            The problem with the Sargent Test is that it is not comparable to other methods because of the arm swing. The gold standard is the Vertical Jump Performance Test, but this involves complex videography and calculating the exact position of the body center of mass over time. Other methods are involve calculating height based on a precise measure of takeoff velocity or time in the air.
+          </p>
+          <p>
+            The good news though is that the Sargent Test has a high level of reliability. In other words, it may not give the same number as other tests, but from one jump to the next, it gives consistent results. The reason that’s good news is because most often we’re interested in measuring vertical jump as a way of tracking progress. If the test were unreliable, we couldn’t be confident that we were actually making progress, but changes could be caused by test error. In fact, though, the Sargent Test has an excellent level of reliability (see Aragón-Vargas, 2000, p. 223, n. 1).
+          </p>
+          <p>
+            For most athletes, the important thing is to get a reliably consistent measure of jump height from workout to workout for a given individual so he or she can mark progress. In other words, it’s not usually that important to compare one individual to another or to come up with a standard measure, but just a measure that one give athlete can use to see what’s working and what’s not.
+          </p>
         </CardContent>
       </Card>
     </section>
