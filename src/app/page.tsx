@@ -1,5 +1,4 @@
 import DunkCalculator from '@/components/dunk-calculator';
-import ExerciseLibrary from '@/components/exercise-library';
 import ProgressTracker from '@/components/progress-tracker';
 
 const BasketballIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -15,7 +14,7 @@ const BasketballIcon = (props: React.SVGProps<SVGSVGElement>) => (
   >
     <circle cx="12" cy="12" r="10" />
     <path d="M12 2c-2.76 3.33-4.43 7.85-4.43 10 0 2.15 1.67 6.67 4.43 10" />
-    <path d="M12 2c2.76 3.33 4.43 7.85 4.43 10 0 2.15-1.67 6.67-4.43 10" />
+    <path d="M12 2c2.76 3.33 4.43 7.85-4.43 10 0 2.15-1.67 6.67-4.43 10" />
     <path d="M2.52 10.32c5.96 1.14 12.98 1.14 18.96 0" />
     <path d="M2.52 13.68c5.96-1.14 12.98-1.14 18.96 0" />
   </svg>
@@ -34,14 +33,13 @@ export default function Home() {
             </h1>
           </div>
           <p className="mt-2 text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
-            Calculate your vertical leap, find out if you can dunk, and discover exercises to reach your goal.
+            Calculate your vertical leap, find out if you can dunk, and track your progress to reach your goal.
           </p>
         </div>
       </header>
       <main className="flex-grow container mx-auto px-4 pb-12">
         <div className="space-y-12 md:space-y-16">
           <DunkCalculator />
-          <ExerciseLibrary />
           <ProgressTracker />
         </div>
       </main>
