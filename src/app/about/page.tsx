@@ -1,5 +1,10 @@
 import { SubscriptionForm } from '@/components/subscription-form';
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'About',
+};
 
 export default function AboutPage() {
   return (
@@ -8,7 +13,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 text-center">
              <Link href="/" className="inline-block mb-4">
                 <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">
-                    Leap Dunk Pro
+                    FreeDunkCalculator.com
                 </h1>
             </Link>
             <p className="text-lg text-muted-foreground">Learn the story behind the system.</p>
@@ -42,7 +47,7 @@ export default function AboutPage() {
          <div className="flex justify-center items-center gap-4">
             <Link href="/" className="hover:text-primary transition-colors">Back to Calculator</Link>
             <span>&bull;</span>
-            <p>&copy; {new Date().getFullYear()} Leap Dunk Pro. All Rights Reserved.</p>
+            <p>&copy; {new Date().getFullYear()} FreeDunkCalculator.com. All Rights Reserved.</p>
         </div>
       </footer>
     </div>

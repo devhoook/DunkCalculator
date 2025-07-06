@@ -3,8 +3,12 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'Dunk Calculator | Leap Dunk Pro',
-  description: 'Use the Leap Dunk Pro dunk calculator to determine your vertical leap and see if you have what it takes to dunk a basketball. Track your progress and improve your jump.',
+  metadataBase: new URL('https://freedunkcalculator.com'),
+  title: {
+    default: 'Free Dunk Calculator | See if You Can Dunk',
+    template: '%s | Free Dunk Calculator',
+  },
+  description: 'Use our free dunk calculator to determine your vertical leap and see if you have what it takes to dunk a basketball. Track your progress and improve your jump.',
 };
 
 export default function RootLayout({

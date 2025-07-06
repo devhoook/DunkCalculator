@@ -31,7 +31,7 @@ export default function Home() {
            <div className="flex justify-center items-center gap-3 mb-2">
             <BasketballIcon className="h-8 w-8 text-primary" />
             <span className="text-xl font-semibold font-headline text-primary/90">
-                Leap Dunk Pro
+                FreeDunkCalculator.com
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold font-headline text-primary">
@@ -53,7 +53,7 @@ export default function Home() {
         <div className="flex justify-center items-center gap-4">
           <Link href="/about" className="hover:text-primary transition-colors">About</Link>
           <span>&bull;</span>
-          <p>&copy; {new Date().getFullYear()} Leap Dunk Pro. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} FreeDunkCalculator.com. All Rights Reserved.</p>
         </div>
       </footer>
     </div>
