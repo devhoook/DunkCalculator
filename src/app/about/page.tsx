@@ -49,6 +49,8 @@ export default function AboutPage() {
             <span>&bull;</span>
             <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             <span>&bull;</span>
+            <Link href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
+            <span>&bull;</span>
             <p>&copy; {new Date().getFullYear()} FreeDunkCalculator.com. All Rights Reserved.</p>
         </div>
       </footer>
