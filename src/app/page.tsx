@@ -28,14 +28,17 @@ export default function Home() {
     <div className="flex flex-col min-h-dvh bg-background">
       <header className="py-12 md:py-16">
         <div className="container mx-auto px-4 text-center">
-          <div className="flex justify-center items-center gap-4 mb-4">
-            <BasketballIcon className="h-10 w-10 md:h-12 md:w-12 text-primary" />
-            <h1 className="text-4xl md:text-6xl font-bold font-headline text-primary">
-              Leap Dunk Pro
-            </h1>
+           <div className="flex justify-center items-center gap-3 mb-2">
+            <BasketballIcon className="h-8 w-8 text-primary" />
+            <span className="text-xl font-semibold font-headline text-primary/90">
+                Leap Dunk Pro
+            </span>
           </div>
-          <p className="mt-2 text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
-            Calculate your vertical leap, find out if you can dunk, and track your progress to reach your goal.
+          <h1 className="text-4xl md:text-6xl font-bold font-headline text-primary">
+            Dunk Calculator
+          </h1>
+          <p className="mt-4 text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto">
+            Use our free dunk calculator to find out if you can dunk. Enter your height, standing reach, and vertical leap to see how close you are to throwing it down. Track your progress and use our resources to improve your jump.
           </p>
         </div>
       </header>

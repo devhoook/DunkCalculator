@@ -7,7 +7,7 @@ import * as z from 'zod';
 import { CheckCircle, Target } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Progress } from '@/components/ui/progress';
@@ -102,10 +102,7 @@ export default function DunkCalculator() {
   return (
     <section id="calculator">
       <Card className="max-w-2xl mx-auto overflow-hidden shadow-lg">
-        <CardHeader>
-          <CardTitle className="font-headline text-3xl text-center">Dunk Calculator</CardTitle>
-        </CardHeader>
-        <CardContent>
+        <CardContent className="pt-6">
           <Tabs value={unit} onValueChange={(v) => setUnit(v as UnitSystem)} className="w-full mb-6">
             <TabsList className="grid w-full grid-cols-2">
               <TabsTrigger value="imperial">Imperial (in)</TabsTrigger>
