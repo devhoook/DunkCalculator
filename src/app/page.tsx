@@ -1,5 +1,4 @@
 import DunkCalculator from '@/components/dunk-calculator';
-import ProgressTracker from '@/components/progress-tracker';
 import VerticalJumpArticle from '@/components/vertical-jump-article';
 import Link from 'next/link';
 
@@ -46,7 +45,6 @@ export default function Home() {
         <div className="space-y-12 md:space-y-16">
           <DunkCalculator />
           <VerticalJumpArticle />
-          <ProgressTracker />
         </div>
       </main>
       <footer className="text-center py-6 text-sm text-muted-foreground">
