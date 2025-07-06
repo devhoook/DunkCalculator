@@ -8,18 +8,15 @@ export const metadata: Metadata = {
 
 export default function TermsOfServicePage() {
   return (
-    <div className="bg-background text-foreground min-h-dvh">
-      <header className="py-8 border-b">
+    <div>
+      <div className="py-8 border-b">
         <div className="container mx-auto px-4 text-center">
-             <Link href="/" className="inline-block mb-4">
-                <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">
-                    FreeDunkCalculator.com
-                </h1>
-            </Link>
-            <p className="text-lg text-muted-foreground">Terms of Service</p>
+            <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">
+                Terms of Service
+            </h1>
         </div>
-      </header>
-      <main className="container mx-auto px-4 py-12">
+      </div>
+      <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto space-y-6 text-base text-foreground/90">
             <p>Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the https://freedunkcalculator.com website (the "Service") operated by FreeDunkCalculator.com ("us", "we", or "our").</p>
 
@@ -61,22 +58,7 @@ export default function TermsOfServicePage() {
             <h2 className="text-2xl font-bold font-headline pt-4 border-t mt-6">8. Contact Us</h2>
             <p>If you have any questions about these Terms, please contact us at: <a href="mailto:sendsudipinbox@gmail.com" className="text-primary hover:underline">sendsudipinbox@gmail.com</a></p>
         </div>
-      </main>
-      <footer className="text-center py-6 text-sm text-muted-foreground border-t">
-         <div className="flex justify-center items-center gap-4 flex-wrap">
-            <Link href="/" className="hover:text-primary transition-colors">Back to Calculator</Link>
-            <span>&bull;</span>
-            <Link href="/about" className="hover:text-primary transition-colors">About</Link>
-            <span>&bull;</span>
-            <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
-            <span>&bull;</span>
-            <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
-            <span>&bull;</span>
-            <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
-            <span>&bull;</span>
-            <p>&copy; {new Date().getFullYear()} FreeDunkCalculator.com. All Rights Reserved.</p>
-        </div>
-      </footer>
+      </div>
     </div>
   );
 }

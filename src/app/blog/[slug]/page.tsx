@@ -1,7 +1,6 @@
 import { getPostBySlug, getPosts } from '@/lib/posts';
 import type { Metadata, ResolvingMetadata } from 'next';
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
 import { format } from 'date-fns';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -44,17 +43,8 @@ export default function BlogPostPage({ params }: Props) {
     const PostContent = post.content;
 
     return (
-        <div className="bg-background text-foreground min-h-dvh flex flex-col">
-            <header className="py-8 border-b">
-                <div className="container mx-auto px-4 text-center">
-                    <Link href="/" className="inline-block mb-4">
-                        <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">
-                            FreeDunkCalculator.com
-                        </h1>
-                    </Link>
-                </div>
-            </header>
-            <main className="container mx-auto px-4 py-12 flex-grow">
+        <div className="py-12">
+            <div className="container mx-auto px-4">
                 <article className="max-w-4xl mx-auto">
                     <header className="mb-8 text-center">
                         <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">{post.title}</h1>
@@ -68,20 +58,7 @@ export default function BlogPostPage({ params }: Props) {
                         </CardContent>
                     </Card>
                 </article>
-            </main>
-            <footer className="text-center py-6 text-sm text-muted-foreground border-t">
-                <div className="flex justify-center items-center gap-4 flex-wrap">
-                    <Link href="/blog" className="hover:text-primary transition-colors">Back to Blog</Link>
-                    <span>&bull;</span>
-                    <Link href="/" className="hover:text-primary transition-colors">Calculator</Link>
-                    <span>&bull;</span>
-                    <Link href="/about" className="hover:text-primary transition-colors">About</Link>
-                    <span>&bull;</span>
-                    <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
-                    <span>&bull;</span>
-                    <p>&copy; {new Date().getFullYear()} FreeDunkCalculator.com. All Rights Reserved.</p>
-                </div>
-            </footer>
+            </div>
         </div>
     );
 }

@@ -8,18 +8,15 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="bg-background text-foreground min-h-dvh">
-      <header className="py-8 border-b">
+    <div>
+      <div className="py-8 border-b">
         <div className="container mx-auto px-4 text-center">
-             <Link href="/" className="inline-block mb-4">
-                <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">
-                    FreeDunkCalculator.com
-                </h1>
-            </Link>
-            <p className="text-lg text-muted-foreground">Privacy Policy</p>
+            <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">
+                Privacy Policy
+            </h1>
         </div>
-      </header>
-      <main className="container mx-auto px-4 py-12">
+      </div>
+      <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto space-y-6 text-base text-foreground/90">
             <p>Welcome to FreeDunkCalculator.com. Your privacy is important to us. This Privacy Policy outlines how we collect, use, and protect your information when you use our website.</p>
 
@@ -90,22 +87,7 @@ export default function PrivacyPolicyPage() {
               <li>Website: <Link href="https://freedunkcalculator.com" className="text-primary hover:underline">https://freedunkcalculator.com</Link></li>
             </ul>
         </div>
-      </main>
-      <footer className="text-center py-6 text-sm text-muted-foreground border-t">
-         <div className="flex justify-center items-center gap-4 flex-wrap">
-            <Link href="/" className="hover:text-primary transition-colors">Back to Calculator</Link>
-            <span>&bull;</span>
-            <Link href="/about" className="hover:text-primary transition-colors">About</Link>
-            <span>&bull;</span>
-            <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
-            <span>&bull;</span>
-            <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
-            <span>&bull;</span>
-            <Link href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
-            <span>&bull;</span>
-            <p>&copy; {new Date().getFullYear()} FreeDunkCalculator.com. All Rights Reserved.</p>
-        </div>
-      </footer>
+      </div>
     </div>
   );
 }
