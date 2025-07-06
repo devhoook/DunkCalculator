@@ -48,8 +48,10 @@ export default function Home() {
         </div>
       </main>
       <footer className="text-center py-6 text-sm text-muted-foreground">
-        <div className="flex justify-center items-center gap-4">
+        <div className="flex justify-center items-center gap-4 flex-wrap">
           <Link href="/about" className="hover:text-primary transition-colors">About</Link>
+          <span>&bull;</span>
+          <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
           <span>&bull;</span>
           <p>&copy; {new Date().getFullYear()} FreeDunkCalculator.com. All Rights Reserved.</p>
         </div>

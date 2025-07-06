@@ -44,8 +44,10 @@ export default function AboutPage() {
         </div>
       </main>
       <footer className="text-center py-6 text-sm text-muted-foreground border-t">
-         <div className="flex justify-center items-center gap-4">
+         <div className="flex justify-center items-center gap-4 flex-wrap">
             <Link href="/" className="hover:text-primary transition-colors">Back to Calculator</Link>
+            <span>&bull;</span>
+            <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             <span>&bull;</span>
             <p>&copy; {new Date().getFullYear()} FreeDunkCalculator.com. All Rights Reserved.</p>
         </div>
