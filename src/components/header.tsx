@@ -34,6 +34,9 @@ export function Header() {
         <div className="flex items-center gap-2">
             <nav className="hidden md:flex gap-1">
             <Button variant="ghost" asChild>
+                <Link href="/#how-it-works">How It Works</Link>
+            </Button>
+            <Button variant="ghost" asChild>
                 <Link href="/#calculator">Calculator</Link>
             </Button>
             <Button variant="ghost" asChild>

@@ -4,6 +4,7 @@ import { AverageVerticalJumpArticle } from '@/app/blog/posts/average-vertical-ju
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionForm } from '@/components/subscription-form';
 import { ContactForm } from '@/components/contact-form';
+import HowItWorks from '@/components/how-it-works';
 
 export default function Home() {
   return (
@@ -17,7 +18,12 @@ export default function Home() {
             Can you dunk? Our free dunk calculator helps you find out. Enter your height, standing reach, and vertical jump to see if you have what it takes to slam a basketball. It's the perfect tool for aspiring players to calculate their jump height needs.
           </p>
         </div>
-        <div className="space-y-12 md:space-y-16 pb-12">
+      </div>
+        
+      <HowItWorks />
+
+      <div className="container mx-auto px-4">
+        <div className="space-y-12 md:space-y-16 py-12">
           <DunkCalculator />
           <section id="article">
             <Card className="max-w-4xl mx-auto shadow-lg">
