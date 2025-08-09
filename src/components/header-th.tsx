@@ -41,9 +41,6 @@ export function HeaderTh() {
             <Button variant="ghost" asChild>
                 <Link href="/th#calculator">เครื่องคำนวณ</Link>
             </Button>
-            <Button variant="ghost" asChild>
-                <Link href="/th#exercises">แบบฝึกหัด</Link>
-            </Button>
              <Button variant="ghost" asChild>
                 <Link href="/th#progress">ความคืบหน้า</Link>
             </Button>

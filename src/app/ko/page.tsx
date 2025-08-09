@@ -1,13 +1,12 @@
 import DunkCalculatorKo from '@/components/dunk-calculator-ko';
 import FaqKo from '@/components/faq-ko';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { SubscriptionFormKo } from '@/components/subscription-form-ko';
 import { ContactFormKo } from '@/components/contact-form-ko';
 import HowItWorksKo from '@/components/how-it-works-ko';
 import { HeaderKo } from '@/components/header-ko';
 import { FooterKo } from '@/components/footer-ko';
 import type { Metadata } from 'next';
-import ExerciseLibrary from '@/components/exercise-library';
 import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
@@ -40,7 +39,6 @@ export default function HomeKo() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorKo />
-              <ExerciseLibrary />
               <ProgressTracker />
               <FaqKo />
 

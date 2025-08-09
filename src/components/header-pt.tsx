@@ -41,9 +41,6 @@ export function HeaderPt() {
             <Button variant="ghost" asChild>
                 <Link href="/pt#calculator">Calculadora</Link>
             </Button>
-            <Button variant="ghost" asChild>
-                <Link href="/pt#exercises">Exercícios</Link>
-            </Button>
              <Button variant="ghost" asChild>
                 <Link href="/pt#progress">Progresso</Link>
             </Button>

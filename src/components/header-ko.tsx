@@ -41,9 +41,6 @@ export function HeaderKo() {
             <Button variant="ghost" asChild>
                 <Link href="/ko#calculator">계산기</Link>
             </Button>
-            <Button variant="ghost" asChild>
-                <Link href="/ko#exercises">운동</Link>
-            </Button>
              <Button variant="ghost" asChild>
                 <Link href="/ko#progress">진행</Link>
             </Button>

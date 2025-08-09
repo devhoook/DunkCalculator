@@ -1,13 +1,12 @@
 import DunkCalculatorId from '@/components/dunk-calculator-id';
 import FaqId from '@/components/faq-id';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { SubscriptionFormId } from '@/components/subscription-form-id';
 import { ContactFormId } from '@/components/contact-form-id';
 import HowItWorksId from '@/components/how-it-works-id';
 import { HeaderId } from '@/components/header-id';
 import { FooterId } from '@/components/footer-id';
 import type { Metadata } from 'next';
-import ExerciseLibrary from '@/components/exercise-library';
 import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
@@ -40,7 +39,6 @@ export default function HomeId() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorId />
-              <ExerciseLibrary />
               <ProgressTracker />
               <FaqId />
 

@@ -41,9 +41,6 @@ export function HeaderIt() {
             <Button variant="ghost" asChild>
                 <Link href="/it#calculator">Calcolatrice</Link>
             </Button>
-            <Button variant="ghost" asChild>
-                <Link href="/it#exercises">Esercizi</Link>
-            </Button>
              <Button variant="ghost" asChild>
                 <Link href="/it#progress">Progresso</Link>
             </Button>

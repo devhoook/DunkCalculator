@@ -41,9 +41,6 @@ export function HeaderTr() {
             <Button variant="ghost" asChild>
                 <Link href="/tr#calculator">Hesaplayıcı</Link>
             </Button>
-            <Button variant="ghost" asChild>
-                <Link href="/tr#exercises">Egzersizler</Link>
-            </Button>
              <Button variant="ghost" asChild>
                 <Link href="/tr#progress">İlerleme</Link>
             </Button>

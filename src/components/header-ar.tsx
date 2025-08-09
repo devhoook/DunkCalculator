@@ -41,9 +41,6 @@ export function HeaderAr() {
             <Button variant="ghost" asChild>
                 <Link href="/ar#calculator">الحاسبة</Link>
             </Button>
-            <Button variant="ghost" asChild>
-                <Link href="/ar#exercises">تمارين</Link>
-            </Button>
              <Button variant="ghost" asChild>
                 <Link href="/ar#progress">تقدم</Link>
             </Button>

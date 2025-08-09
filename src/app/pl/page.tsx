@@ -1,13 +1,12 @@
 import DunkCalculatorPl from '@/components/dunk-calculator-pl';
 import FaqPl from '@/components/faq-pl';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { SubscriptionFormPl } from '@/components/subscription-form-pl';
 import { ContactFormPl } from '@/components/contact-form-pl';
 import HowItWorksPl from '@/components/how-it-works-pl';
 import { HeaderPl } from '@/components/header-pl';
 import { FooterPl } from '@/components/footer-pl';
 import type { Metadata } from 'next';
-import ExerciseLibrary from '@/components/exercise-library';
 import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
@@ -40,7 +39,6 @@ export default function HomePl() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorPl />
-              <ExerciseLibrary />
               <ProgressTracker />
               <FaqPl />
 

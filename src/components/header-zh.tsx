@@ -41,9 +41,6 @@ export function HeaderZh() {
             <Button variant="ghost" asChild>
                 <Link href="/zh#calculator">计算器</Link>
             </Button>
-            <Button variant="ghost" asChild>
-                <Link href="/zh#exercises">练习</Link>
-            </Button>
              <Button variant="ghost" asChild>
                 <Link href="/zh#progress">进展</Link>
             </Button>

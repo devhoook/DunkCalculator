@@ -41,9 +41,6 @@ export function HeaderId() {
             <Button variant="ghost" asChild>
                 <Link href="/id#calculator">Kalkulator</Link>
             </Button>
-            <Button variant="ghost" asChild>
-                <Link href="/id#exercises">Latihan</Link>
-            </Button>
              <Button variant="ghost" asChild>
                 <Link href="/id#progress">Kemajuan</Link>
             </Button>

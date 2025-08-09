@@ -1,13 +1,12 @@
 import DunkCalculatorHi from '@/components/dunk-calculator-hi';
 import FaqHi from '@/components/faq-hi';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { SubscriptionFormHi } from '@/components/subscription-form-hi';
 import { ContactFormHi } from '@/components/contact-form-hi';
 import HowItWorksHi from '@/components/how-it-works-hi';
 import { HeaderHi } from '@/components/header-hi';
 import { FooterHi } from '@/components/footer-hi';
 import type { Metadata } from 'next';
-import ExerciseLibrary from '@/components/exercise-library';
 import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
@@ -40,7 +39,6 @@ export default function HomeHi() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorHi />
-              <ExerciseLibrary />
               <ProgressTracker />
               <FaqHi />
 

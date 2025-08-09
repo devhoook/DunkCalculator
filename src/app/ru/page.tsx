@@ -1,13 +1,12 @@
 import DunkCalculatorRu from '@/components/dunk-calculator-ru';
 import FaqRu from '@/components/faq-ru';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { SubscriptionFormRu } from '@/components/subscription-form-ru';
 import { ContactFormRu } from '@/components/contact-form-ru';
 import HowItWorksRu from '@/components/how-it-works-ru';
 import { HeaderRu } from '@/components/header-ru';
 import { FooterRu } from '@/components/footer-ru';
 import type { Metadata } from 'next';
-import ExerciseLibrary from '@/components/exercise-library';
 import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
@@ -40,7 +39,6 @@ export default function HomeRu() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorRu />
-              <ExerciseLibrary />
               <ProgressTracker />
               <FaqRu />
 

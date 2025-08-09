@@ -1,13 +1,12 @@
 import DunkCalculatorBn from '@/components/dunk-calculator-bn';
 import FaqBn from '@/components/faq-bn';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { SubscriptionFormBn } from '@/components/subscription-form-bn';
 import { ContactFormBn } from '@/components/contact-form-bn';
 import HowItWorksBn from '@/components/how-it-works-bn';
 import { HeaderBn } from '@/components/header-bn';
 import { FooterBn } from '@/components/footer-bn';
 import type { Metadata } from 'next';
-import ExerciseLibrary from '@/components/exercise-library';
 import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
@@ -40,7 +39,6 @@ export default function HomeBn() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorBn />
-              <ExerciseLibrary />
               <ProgressTracker />
               <FaqBn />
 

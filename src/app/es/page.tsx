@@ -1,12 +1,11 @@
 import DunkCalculatorEs from '@/components/dunk-calculator-es';
 import FaqEs from '@/components/faq-es';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { SubscriptionFormEs } from '@/components/subscription-form-es';
 import { ContactFormEs } from '@/components/contact-form-es';
 import HowItWorksEs from '@/components/how-it-works-es';
 import { HeaderEs } from '@/components/header-es';
 import { FooterEs } from '@/components/footer-es';
-import ExerciseLibrary from '@/components/exercise-library';
 import ProgressTracker from '@/components/progress-tracker';
 
 export default function HomeEs() {
@@ -31,7 +30,6 @@ export default function HomeEs() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorEs />
-              <ExerciseLibrary />
               <ProgressTracker />
               <FaqEs />
 

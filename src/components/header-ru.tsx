@@ -41,9 +41,6 @@ export function HeaderRu() {
             <Button variant="ghost" asChild>
                 <Link href="/ru#calculator">Калькулятор</Link>
             </Button>
-            <Button variant="ghost" asChild>
-                <Link href="/ru#exercises">Упражнения</Link>
-            </Button>
              <Button variant="ghost" asChild>
                 <Link href="/ru#progress">Прогресс</Link>
             </Button>

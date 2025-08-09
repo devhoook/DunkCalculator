@@ -1,13 +1,12 @@
 import DunkCalculatorUr from '@/components/dunk-calculator-ur';
 import FaqUr from '@/components/faq-ur';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { SubscriptionFormUr } from '@/components/subscription-form-ur';
 import { ContactFormUr } from '@/components/contact-form-ur';
 import HowItWorksUr from '@/components/how-it-works-ur';
 import { HeaderUr } from '@/components/header-ur';
 import { FooterUr } from '@/components/footer-ur';
 import type { Metadata } from 'next';
-import ExerciseLibrary from '@/components/exercise-library';
 import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
@@ -30,7 +29,7 @@ export default function HomeUr() {
                 ڈنک کیلکولیٹر
               </h1>
               <p className="mt-4 text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto">
-                کیا آپ ڈنک کر سکتے ہیں؟ ہمارا مفت ڈنک کیلکولیٹر آپ کو یہ جاننے میں مدد کرتا ہے۔ اپنی اونچائی، کھڑے ہونے کی پہنچ، اور عمودی چھلانگ درج کریں تاکہ یہ دیکھا جا سکے کہ کیا آپ میں باسکٹ بال کو سلیم کرنے کی صلاحیت ہے۔ یہ خواہشمند کھلاڑیوں کے لیے اپنی چھلانگ کی اونچائی کی ضروریات کا حساب لگانے کے لیے بہترین ٹول ہے۔
+                کیا آپ ڈنک کر सकते ہیں؟ हमारा मुफ्त ڈنک کیلکولیٹر آپ کو یہ جاننے میں مدد کرتا ہے۔ अपनी اونچائی، کھڑے ہونے کی پہنچ، اور عمودی چھلانگ درج کریں تاکہ یہ دیکھا جا سکے کہ کیا آپ میں باسکٹ بال کو سلیم کرنے کی صلاحیت ہے۔ यह خواہشمند کھلاڑیوں کے لیے اپنی چھلانگ کی اونچائی کی ضروریات کا حساب لگانے کے لیے بہترین ٹول ہے۔
               </p>
             </div>
           </div>
@@ -40,7 +39,6 @@ export default function HomeUr() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorUr />
-              <ExerciseLibrary />
               <ProgressTracker />
               <FaqUr />
 
@@ -63,7 +61,7 @@ export default function HomeUr() {
                           انہوں نے کہا کہ میں نے دفاع پر بہت زیادہ توانائی ضائع کی۔ اس نے میری دھماکہ خیز چھلانگ کی طاقت کی ضرورت کو بھڑکا دیا۔ اب، میرا کھیل دوسرے لڑکوں کو پسینہ چھڑا دیتا ہے- کیونکہ بہتری ڈنکنگ کے ساتھ شروع اور ختم نہیں ہوتی۔
                         </p>
                         <p>
-                          میں نے ان گیم بدلنے والی تکنیکوں کے لیے ہر جگہ تلاش کیا۔ میں آپ کو بتا دوں- میرے لیے کام کرنے والا ایک سسٹم ڈھونڈ کر اچھا لگا۔ यह किसी और के لیے भी کام کرے گا، چاہے آپ کتنے ہی لمبے کیوں نہ ہوں۔ راز جاننا چاہتے ہیں؟ ٹھیک ہے، یہ سائٹ آپ کو ایلی-اوپ دے گی، اسے جام کرنے کے لیے تیار ہو جائیں۔
+                          میں نے ان گیم بدلنے والی تکنیکوں کے لیے ہر جگہ تلاش کیا۔ میں آپ کو بتا دوں- میرے لیے کام کرنے والا ایک سسٹم ڈھونڈ کر اچھا لگا۔ यह किसी और के لیے भी کام کرے گا، چاہے آپ کتنے ہی لمبے کیوں نہ ہوں۔ راز جاننا چاہتے ہیں؟ ٹھیک ہے، یہ سائٹ آپ کو ایلی-اوپ دے گی، اسے جام करने के لیے تیار ہو جائیں۔
                         </p>
                         <p className="font-semibold text-primary">
                           اور یاد رکھیں، بہترین ٹپس اور راز خصوصی طور پر ہمارے سبسکرائبرز کو ملتے ہیں، لہذا یقینی بنائیں کہ آپ صفحہ کے دائیں جانب فہرست کے لیے سائن اپ کریں۔

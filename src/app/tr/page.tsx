@@ -1,13 +1,12 @@
 import DunkCalculatorTr from '@/components/dunk-calculator-tr';
 import FaqTr from '@/components/faq-tr';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { SubscriptionFormTr } from '@/components/subscription-form-tr';
 import { ContactFormTr } from '@/components/contact-form-tr';
 import HowItWorksTr from '@/components/how-it-works-tr';
 import { HeaderTr } from '@/components/header-tr';
 import { FooterTr } from '@/components/footer-tr';
 import type { Metadata } from 'next';
-import ExerciseLibrary from '@/components/exercise-library';
 import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
@@ -40,7 +39,6 @@ export default function HomeTr() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorTr />
-              <ExerciseLibrary />
               <ProgressTracker />
               <FaqTr />
 

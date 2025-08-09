@@ -41,9 +41,6 @@ export function HeaderHi() {
             <Button variant="ghost" asChild>
                 <Link href="/hi#calculator">कैलकुलेटर</Link>
             </Button>
-            <Button variant="ghost" asChild>
-                <Link href="/hi#exercises">व्यायाम</Link>
-            </Button>
              <Button variant="ghost" asChild>
                 <Link href="/hi#progress">प्रगति</Link>
             </Button>

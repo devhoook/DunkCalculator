@@ -41,9 +41,6 @@ export function HeaderVi() {
             <Button variant="ghost" asChild>
                 <Link href="/vi#calculator">Máy tính</Link>
             </Button>
-            <Button variant="ghost" asChild>
-                <Link href="/vi#exercises">Bài tập</Link>
-            </Button>
              <Button variant="ghost" asChild>
                 <Link href="/vi#progress">Tiến trình</Link>
             </Button>

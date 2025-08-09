@@ -1,13 +1,12 @@
 import DunkCalculatorZh from '@/components/dunk-calculator-zh';
 import FaqZh from '@/components/faq-zh';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { SubscriptionFormZh } from '@/components/subscription-form-zh';
 import { ContactFormZh } from '@/components/contact-form-zh';
 import HowItWorksZh from '@/components/how-it-works-zh';
 import { HeaderZh } from '@/components/header-zh';
 import { FooterZh } from '@/components/footer-zh';
 import type { Metadata } from 'next';
-import ExerciseLibrary from '@/components/exercise-library';
 import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
@@ -40,7 +39,6 @@ export default function HomeZh() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorZh />
-              <ExerciseLibrary />
               <ProgressTracker />
               <FaqZh />
 

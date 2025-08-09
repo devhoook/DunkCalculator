@@ -1,13 +1,12 @@
 import DunkCalculatorDe from '@/components/dunk-calculator-de';
 import FaqDe from '@/components/faq-de';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { SubscriptionFormDe } from '@/components/subscription-form-de';
 import { ContactFormDe } from '@/components/contact-form-de';
 import HowItWorksDe from '@/components/how-it-works-de';
 import { HeaderDe } from '@/components/header-de';
 import { FooterDe } from '@/components/footer-de';
 import type { Metadata } from 'next';
-import ExerciseLibrary from '@/components/exercise-library';
 import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
@@ -40,7 +39,6 @@ export default function HomeDe() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorDe />
-              <ExerciseLibrary />
               <ProgressTracker />
               <FaqDe />
 

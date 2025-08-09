@@ -1,13 +1,12 @@
 import DunkCalculatorFa from '@/components/dunk-calculator-fa';
 import FaqFa from '@/components/faq-fa';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { SubscriptionFormFa } from '@/components/subscription-form-fa';
 import { ContactFormFa } from '@/components/contact-form-fa';
 import HowItWorksFa from '@/components/how-it-works-fa';
 import { HeaderFa } from '@/components/header-fa';
 import { FooterFa } from '@/components/footer-fa';
 import type { Metadata } from 'next';
-import ExerciseLibrary from '@/components/exercise-library';
 import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
@@ -40,7 +39,6 @@ export default function HomeFa() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorFa />
-              <ExerciseLibrary />
               <ProgressTracker />
               <FaqFa />
 

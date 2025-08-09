@@ -41,9 +41,6 @@ export function HeaderBn() {
             <Button variant="ghost" asChild>
                 <Link href="/bn#calculator">ক্যালকুলেটর</Link>
             </Button>
-            <Button variant="ghost" asChild>
-                <Link href="/bn#exercises">ব্যায়াম</Link>
-            </Button>
              <Button variant="ghost" asChild>
                 <Link href="/bn#progress"> অগ্রগতি</Link>
             </Button>

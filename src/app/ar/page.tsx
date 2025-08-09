@@ -1,13 +1,12 @@
 import DunkCalculatorAr from '@/components/dunk-calculator-ar';
 import FaqAr from '@/components/faq-ar';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { SubscriptionFormAr } from '@/components/subscription-form-ar';
 import { ContactFormAr } from '@/components/contact-form-ar';
 import HowItWorksAr from '@/components/how-it-works-ar';
 import { HeaderAr } from '@/components/header-ar';
 import { FooterAr } from '@/components/footer-ar';
 import type { Metadata } from 'next';
-import ExerciseLibrary from '@/components/exercise-library';
 import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
@@ -40,7 +39,6 @@ export default function HomeAr() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorAr />
-              <ExerciseLibrary />
               <ProgressTracker />
               <FaqAr />
 

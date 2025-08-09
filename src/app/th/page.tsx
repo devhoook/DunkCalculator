@@ -1,13 +1,12 @@
 import DunkCalculatorTh from '@/components/dunk-calculator-th';
 import FaqTh from '@/components/faq-th';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { SubscriptionFormTh } from '@/components/subscription-form-th';
 import { ContactFormTh } from '@/components/contact-form-th';
 import HowItWorksTh from '@/components/how-it-works-th';
 import { HeaderTh } from '@/components/header-th';
 import { FooterTh } from '@/components/footer-th';
 import type { Metadata } from 'next';
-import ExerciseLibrary from '@/components/exercise-library';
 import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
@@ -40,7 +39,6 @@ export default function HomeTh() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorTh />
-              <ExerciseLibrary />
               <ProgressTracker />
               <FaqTh />
 

@@ -1,13 +1,12 @@
 import DunkCalculatorVi from '@/components/dunk-calculator-vi';
 import FaqVi from '@/components/faq-vi';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { SubscriptionFormVi } from '@/components/subscription-form-vi';
 import { ContactFormVi } from '@/components/contact-form-vi';
 import HowItWorksVi from '@/components/how-it-works-vi';
 import { HeaderVi } from '@/components/header-vi';
 import { FooterVi } from '@/components/footer-vi';
 import type { Metadata } from 'next';
-import ExerciseLibrary from '@/components/exercise-library';
 import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
@@ -40,7 +39,6 @@ export default function HomeVi() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorVi />
-              <ExerciseLibrary />
               <ProgressTracker />
               <FaqVi />
 
