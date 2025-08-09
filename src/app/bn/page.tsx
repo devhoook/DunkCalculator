@@ -8,6 +8,7 @@ import { HeaderBn } from '@/components/header-bn';
 import { FooterBn } from '@/components/footer-bn';
 import type { Metadata } from 'next';
 import ProgressTracker from '@/components/progress-tracker';
+import { DunkCalculatorGuideBn } from '@/components/dunk-calculator-guide-bn';
 
 export const metadata: Metadata = {
   title: 'ডান্ক ক্যালকুলেটর | আপনার উল্লম্ব লাফ গণনা করার জন্য বিনামূল্যে টুল',
@@ -41,6 +42,7 @@ export default function HomeBn() {
               <DunkCalculatorBn />
               <ProgressTracker />
               <FaqBn />
+              <DunkCalculatorGuideBn />
 
               <section id="about">
                 <div className="text-center">

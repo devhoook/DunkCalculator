@@ -8,6 +8,7 @@ import { HeaderDe } from '@/components/header-de';
 import { FooterDe } from '@/components/footer-de';
 import type { Metadata } from 'next';
 import ProgressTracker from '@/components/progress-tracker';
+import { DunkCalculatorGuideDe } from '@/components/dunk-calculator-guide-de';
 
 export const metadata: Metadata = {
   title: 'Dunk-Rechner | Kostenloses Tool zur Berechnung deines vertikalen Sprungs',
@@ -41,6 +42,7 @@ export default function HomeDe() {
               <DunkCalculatorDe />
               <ProgressTracker />
               <FaqDe />
+              <DunkCalculatorGuideDe />
 
               <section id="about">
                 <div className="text-center">

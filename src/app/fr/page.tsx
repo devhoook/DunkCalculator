@@ -8,6 +8,7 @@ import { HeaderFr } from '@/components/header-fr';
 import { FooterFr } from '@/components/footer-fr';
 import type { Metadata } from 'next';
 import ProgressTracker from '@/components/progress-tracker';
+import { DunkCalculatorGuideFr } from '@/components/dunk-calculator-guide-fr';
 
 export const metadata: Metadata = {
   title: 'Calculateur de Dunk | Outil Gratuit pour Calculer Votre Saut Vertical',
@@ -41,6 +42,7 @@ export default function HomeFr() {
               <DunkCalculatorFr />
               <ProgressTracker />
               <FaqFr />
+              <DunkCalculatorGuideFr />
 
               <section id="about">
                 <div className="text-center">

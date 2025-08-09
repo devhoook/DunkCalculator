@@ -8,6 +8,7 @@ import { HeaderZh } from '@/components/header-zh';
 import { FooterZh } from '@/components/footer-zh';
 import type { Metadata } from 'next';
 import ProgressTracker from '@/components/progress-tracker';
+import { DunkCalculatorGuideZh } from '@/components/dunk-calculator-guide-zh';
 
 export const metadata: Metadata = {
   title: '扣篮计算器 | 计算您垂直弹跳的免费工具',
@@ -41,6 +42,7 @@ export default function HomeZh() {
               <DunkCalculatorZh />
               <ProgressTracker />
               <FaqZh />
+              <DunkCalculatorGuideZh />
 
               <section id="about">
                 <div className="text-center">

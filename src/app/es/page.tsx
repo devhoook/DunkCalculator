@@ -7,6 +7,7 @@ import HowItWorksEs from '@/components/how-it-works-es';
 import { HeaderEs } from '@/components/header-es';
 import { FooterEs } from '@/components/footer-es';
 import ProgressTracker from '@/components/progress-tracker';
+import { DunkCalculatorGuideEs } from '@/components/dunk-calculator-guide-es';
 
 export default function HomeEs() {
   return (
@@ -32,6 +33,7 @@ export default function HomeEs() {
               <DunkCalculatorEs />
               <ProgressTracker />
               <FaqEs />
+              <DunkCalculatorGuideEs />
 
               <section id="about">
                 <div className="text-center">

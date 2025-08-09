@@ -8,6 +8,7 @@ import { HeaderAr } from '@/components/header-ar';
 import { FooterAr } from '@/components/footer-ar';
 import type { Metadata } from 'next';
 import ProgressTracker from '@/components/progress-tracker';
+import { DunkCalculatorGuideAr } from '@/components/dunk-calculator-guide-ar';
 
 export const metadata: Metadata = {
   title: 'حاسبة الدنك | أداة مجانية لحساب قفزتك العمودية',
@@ -41,6 +42,7 @@ export default function HomeAr() {
               <DunkCalculatorAr />
               <ProgressTracker />
               <FaqAr />
+              <DunkCalculatorGuideAr />
 
               <section id="about">
                 <div className="text-center">

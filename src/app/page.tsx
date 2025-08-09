@@ -7,6 +7,7 @@ import HowItWorks from '@/components/how-it-works';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import ProgressTracker from '@/components/progress-tracker';
+import { DunkCalculatorGuide } from '@/components/dunk-calculator-guide';
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
               <DunkCalculator />
               <ProgressTracker />
               <Faq />
+              <DunkCalculatorGuide />
 
               <section id="about">
                 <div className="text-center">

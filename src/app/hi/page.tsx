@@ -8,6 +8,7 @@ import { HeaderHi } from '@/components/header-hi';
 import { FooterHi } from '@/components/footer-hi';
 import type { Metadata } from 'next';
 import ProgressTracker from '@/components/progress-tracker';
+import { DunkCalculatorGuideHi } from '@/components/dunk-calculator-guide-hi';
 
 export const metadata: Metadata = {
   title: 'डंक कैलकुलेटर | अपनी वर्टिकल जंप की गणना के लिए मुफ्त उपकरण',
@@ -41,6 +42,7 @@ export default function HomeHi() {
               <DunkCalculatorHi />
               <ProgressTracker />
               <FaqHi />
+              <DunkCalculatorGuideHi />
 
               <section id="about">
                 <div className="text-center">
