@@ -62,42 +62,26 @@ export function HeaderJa() {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
-                <DropdownMenuItem asChild>
-                    <Link href="/">English</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                    <Link href="/es">Español</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                    <Link href="/zh">中文 (简体)</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                    <Link href="/hi">हिन्दी</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                    <Link href="/ar">العربية</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                    <Link href="/fr">Français</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                    <Link href="/bn">বাংলা</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                    <Link href="/pt">Português</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                    <Link href="/ru">Русский</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                    <Link href="/ur">اردو</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                    <Link href="/de">Deutsch</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                    <Link href="/ja">日本語</Link>
-                </DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/">English</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/es">Español</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/zh">中文 (简体)</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/hi">हिन्दी</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/ar">العربية</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/fr">Français</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/bn">বাংলা</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/pt">Português</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/ru">Русский</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/ur">اردو</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/de">Deutsch</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/ja">日本語</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/tr">Türkçe</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/ko">한국어</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/vi">Tiếng Việt</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/it">Italiano</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/fa">فارسی</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/pl">Polski</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/th">ไทย</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/id">Bahasa Indonesia</Link></DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <ModeToggle />

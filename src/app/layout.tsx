@@ -29,6 +29,10 @@ export const metadata: Metadata = {
       'ko': '/ko',
       'vi': '/vi',
       'it': '/it',
+      'fa': '/fa',
+      'pl': '/pl',
+      'th': '/th',
+      'id': '/id',
     },
   },
 };

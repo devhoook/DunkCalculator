@@ -78,6 +78,10 @@ export function HeaderTr() {
                 <DropdownMenuItem asChild><Link href="/ko">한국어</Link></DropdownMenuItem>
                 <DropdownMenuItem asChild><Link href="/vi">Tiếng Việt</Link></DropdownMenuItem>
                 <DropdownMenuItem asChild><Link href="/it">Italiano</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/fa">فارسی</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/pl">Polski</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/th">ไทย</Link></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link href="/id">Bahasa Indonesia</Link></DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <ModeToggle />

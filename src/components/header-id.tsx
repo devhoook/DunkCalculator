@@ -23,42 +23,42 @@ const BasketballIcon = (props: React.SVGProps<SVGSVGElement>) => (
     </svg>
   );
 
-export function HeaderRu() {
+export function HeaderId() {
   return (
     <header className="py-4 border-b sticky top-0 bg-background/95 backdrop-blur-sm z-10">
       <div className="container mx-auto flex justify-between items-center px-4">
-        <Link href="/ru" className="flex items-center gap-2">
+        <Link href="/id" className="flex items-center gap-2">
             <BasketballIcon className="h-8 w-8 text-primary" />
             <span className="text-xl font-bold font-headline text-primary">
-                КалькуляторДанков.com
+                FreeDunkCalculator.com
             </span>
         </Link>
         <div className="flex items-center gap-2">
             <nav className="hidden md:flex gap-1">
             <Button variant="ghost" asChild>
-                <Link href="/ru#how-it-works">Как это работает</Link>
+                <Link href="/id#how-it-works">Cara Kerja</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/ru#calculator">Калькулятор</Link>
+                <Link href="/id#calculator">Kalkulator</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/ru#article">Статья</Link>
+                <Link href="/id#article">Artikel</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/ru#faq">FAQ</Link>
+                <Link href="/id#faq">FAQ</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/ru#about">О нас</Link>
+                <Link href="/id#about">Tentang</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/ru#contact">Контакт</Link>
+                <Link href="/id#contact">Kontak</Link>
             </Button>
             </nav>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" size="icon">
                   <Globe className="h-[1.2rem] w-[1.2rem]" />
-                  <span className="sr-only">Выберите язык</span>
+                  <span className="sr-only">Pilih bahasa</span>
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
