@@ -14,7 +14,7 @@ export default function Home() {
             Dunk Calculator
           </h1>
           <p className="mt-4 text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto">
-            Use our free dunk calculator to find out if you can dunk. Enter your height, standing reach, and vertical leap to see how close you are to throwing it down. Track your progress and use our resources to improve your jump.
+            Can you dunk? Our free dunk calculator helps you find out. Enter your height, standing reach, and vertical jump to see if you have what it takes to slam a basketball. It's the perfect tool for aspiring players to calculate their jump height needs.
           </p>
         </div>
         <div className="space-y-12 md:space-y-16 pb-12">

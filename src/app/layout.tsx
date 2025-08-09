@@ -8,10 +8,10 @@ import { ThemeProvider } from '@/components/theme-provider';
 export const metadata: Metadata = {
   metadataBase: new URL('https://freedunkcalculator.com'),
   title: {
-    default: 'Free Dunk Calculator | See if You Can Dunk',
-    template: '%s | Free Dunk Calculator',
+    default: 'Dunk Calculator | Free Tool to Calculate Your Vertical Jump',
+    template: '%s | Dunk Calculator',
   },
-  description: 'Use our free dunk calculator to determine your vertical leap and see if you have what it takes to dunk a basketball. Track your progress and improve your jump.',
+  description: 'Use our free dunk calculator to see if you can dunk. Enter your height and vertical leap to instantly calculate if you can reach the rim and throw down a basketball.',
 };
 
 export default function RootLayout({
