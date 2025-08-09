@@ -23,42 +23,42 @@ const BasketballIcon = (props: React.SVGProps<SVGSVGElement>) => (
     </svg>
   );
 
-export function HeaderEs() {
+export function HeaderFr() {
   return (
     <header className="py-4 border-b sticky top-0 bg-background/95 backdrop-blur-sm z-10">
       <div className="container mx-auto flex justify-between items-center px-4">
-        <Link href="/es" className="flex items-center gap-2">
+        <Link href="/fr" className="flex items-center gap-2">
             <BasketballIcon className="h-8 w-8 text-primary" />
             <span className="text-xl font-bold font-headline text-primary">
-                CalculadoraDeMates.com
+                CalculateurDeDunk.com
             </span>
         </Link>
         <div className="flex items-center gap-2">
             <nav className="hidden md:flex gap-1">
             <Button variant="ghost" asChild>
-                <Link href="/es#how-it-works">Cómo Funciona</Link>
+                <Link href="/fr#how-it-works">Comment Ça Marche</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/es#calculator">Calculadora</Link>
+                <Link href="/fr#calculator">Calculateur</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/es#article">Artículo</Link>
+                <Link href="/fr#article">Article</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/es#faq">FAQ</Link>
+                <Link href="/fr#faq">FAQ</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/es#about">Sobre Nosotros</Link>
+                <Link href="/fr#about">À propos</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/es#contact">Contacto</Link>
+                <Link href="/fr#contact">Contact</Link>
             </Button>
             </nav>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" size="icon">
                   <Globe className="h-[1.2rem] w-[1.2rem]" />
-                  <span className="sr-only">Choose language</span>
+                  <span className="sr-only">Choisir la langue</span>
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
@@ -68,7 +68,7 @@ export function HeaderEs() {
                 <DropdownMenuItem asChild>
                     <Link href="/es">Español</Link>
                 </DropdownMenuItem>
-                 <DropdownMenuItem asChild>
+                <DropdownMenuItem asChild>
                     <Link href="/zh">中文 (简体)</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>

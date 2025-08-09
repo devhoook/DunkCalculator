@@ -23,42 +23,42 @@ const BasketballIcon = (props: React.SVGProps<SVGSVGElement>) => (
     </svg>
   );
 
-export function HeaderEs() {
+export function HeaderZh() {
   return (
     <header className="py-4 border-b sticky top-0 bg-background/95 backdrop-blur-sm z-10">
       <div className="container mx-auto flex justify-between items-center px-4">
-        <Link href="/es" className="flex items-center gap-2">
+        <Link href="/zh" className="flex items-center gap-2">
             <BasketballIcon className="h-8 w-8 text-primary" />
             <span className="text-xl font-bold font-headline text-primary">
-                CalculadoraDeMates.com
+                扣篮计算器.com
             </span>
         </Link>
         <div className="flex items-center gap-2">
             <nav className="hidden md:flex gap-1">
             <Button variant="ghost" asChild>
-                <Link href="/es#how-it-works">Cómo Funciona</Link>
+                <Link href="/zh#how-it-works">工作原理</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/es#calculator">Calculadora</Link>
+                <Link href="/zh#calculator">计算器</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/es#article">Artículo</Link>
+                <Link href="/zh#article">文章</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/es#faq">FAQ</Link>
+                <Link href="/zh#faq">常见问题</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/es#about">Sobre Nosotros</Link>
+                <Link href="/zh#about">关于我们</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/es#contact">Contacto</Link>
+                <Link href="/zh#contact">联系我们</Link>
             </Button>
             </nav>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" size="icon">
                   <Globe className="h-[1.2rem] w-[1.2rem]" />
-                  <span className="sr-only">Choose language</span>
+                  <span className="sr-only">选择语言</span>
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
@@ -68,7 +68,7 @@ export function HeaderEs() {
                 <DropdownMenuItem asChild>
                     <Link href="/es">Español</Link>
                 </DropdownMenuItem>
-                 <DropdownMenuItem asChild>
+                <DropdownMenuItem asChild>
                     <Link href="/zh">中文 (简体)</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
