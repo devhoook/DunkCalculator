@@ -1,31 +1,19 @@
-import { type ComponentType } from 'react';
-import { AverageVerticalJumpArticle } from '@/app/blog/posts/average-vertical-jump';
+import Link from 'next/link';
 
-export interface Post {
-    slug: string;
-    title: string;
-    description: string;
-    date: string;
-    author: string;
-    content: ComponentType;
-}
-
-export const posts: Post[] = [
-    {
-        slug: 'average-vertical-jump',
-        title: "What's an Average Vertical Jump?",
-        description: "Explore the data and factors behind average vertical jump heights for athletes and how you can measure up.",
-        date: '2024-07-29',
-        author: 'Adam',
-        content: AverageVerticalJumpArticle,
-    },
-    // Add more posts here in the future
-];
-
-export function getPosts(): Post[] {
-    return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-}
-
-export function getPostBySlug(slug: string): Post | undefined {
-    return posts.find(post => post.slug === slug);
+export function Footer() {
+    return (
+        <footer className="bg-muted text-muted-foreground border-t">
+            <div className="container mx-auto py-8 px-4">
+                <div className="flex justify-center items-center gap-4 flex-wrap mb-4">
+                    <Link href="/about" className="hover:text-primary transition-colors">About</Link>
+                    <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
+                    <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+                    <Link href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
+                </div>
+                <div className="text-center text-sm">
+                    <p>&copy; {new Date().getFullYear()} FreeDunkCalculator.com. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    );
 }

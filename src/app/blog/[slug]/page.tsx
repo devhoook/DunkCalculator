@@ -1,64 +1,19 @@
-import { getPostBySlug, getPosts } from '@/lib/posts';
-import type { Metadata, ResolvingMetadata } from 'next';
-import { notFound } from 'next/navigation';
-import { format } from 'date-fns';
-import { Card, CardContent } from '@/components/ui/card';
+import Link from 'next/link';
 
-type Props = {
-    params: { slug: string }
-}
-
-export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
-  const post = getPostBySlug(params.slug);
-
-  if (!post) {
-    return {
-      title: 'Post not found',
-    }
-  }
-
-  return {
-    title: post.title,
-    description: post.description,
-  }
-}
-
-export function generateStaticParams() {
-    const posts = getPosts();
-    return posts.map(post => ({
-        slug: post.slug,
-    }));
-}
-
-export default function BlogPostPage({ params }: Props) {
-    const post = getPostBySlug(params.slug);
-
-    if (!post) {
-        notFound();
-    }
-
-    const PostContent = post.content;
-
+export function Footer() {
     return (
-        <div className="py-12">
-            <div className="container mx-auto px-4">
-                <article className="max-w-4xl mx-auto">
-                    <header className="mb-8 text-center">
-                        <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary">{post.title}</h1>
-                        <p className="mt-4 text-muted-foreground">
-                            Posted on <time dateTime={post.date}>{format(new Date(post.date), 'MMMM d, yyyy')}</time> by {post.author}
-                        </p>
-                    </header>
-                    <Card className="shadow-lg">
-                        <CardContent className="p-6 md:p-8">
-                            <PostContent />
-                        </CardContent>
-                    </Card>
-                </article>
+        <footer className="bg-muted text-muted-foreground border-t">
+            <div className="container mx-auto py-8 px-4">
+                <div className="flex justify-center items-center gap-4 flex-wrap mb-4">
+                    <Link href="/about" className="hover:text-primary transition-colors">About</Link>
+                    <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
+                    <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+                    <Link href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
+                </div>
+                <div className="text-center text-sm">
+                    <p>&copy; {new Date().getFullYear()} FreeDunkCalculator.com. All Rights Reserved.</p>
+                </div>
             </div>
-        </div>
+        </footer>
     );
 }
