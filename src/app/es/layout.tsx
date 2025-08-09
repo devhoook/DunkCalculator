@@ -1,19 +1,19 @@
 import type {Metadata} from 'next';
-import './globals.css';
+import '../globals.css';
 import { Toaster } from "@/components/ui/toaster"
-import { Header } from '@/components/header';
-import { Footer } from '@/components/footer';
+import { HeaderEs } from '@/components/header-es';
+import { FooterEs } from '@/components/footer-es';
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://freedunkcalculator.com'),
+  metadataBase: new URL('https://freedunkcalculator.com/es'),
   title: {
-    default: 'Dunk Calculator | Free Tool to Calculate Your Vertical Jump',
-    template: '%s | Dunk Calculator',
+    default: 'Calculadora de Mates | Herramienta Gratuita para Calcular tu Salto Vertical',
+    template: '%s | Calculadora de Mates',
   },
-  description: 'Use our free dunk calculator to see if you can dunk. Enter your height and vertical leap to instantly calculate if you can reach the rim and throw down a basketball.',
+  description: 'Usa nuestra calculadora de mates gratuita para saber si puedes hacer un mate. Introduce tu altura y salto vertical para calcular al instante si puedes llegar al aro y machacar el balón.',
   alternates: {
-    canonical: '/',
+    canonical: '/es',
     languages: {
       'en': '/',
       'es': '/es',
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -41,11 +41,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
+          <HeaderEs />
           <main className="flex-grow">
             {children}
           </main>
-          <Footer />
+          <FooterEs />
           <Toaster />
         </ThemeProvider>
       </body>
