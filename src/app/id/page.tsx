@@ -1,6 +1,5 @@
 import DunkCalculatorId from '@/components/dunk-calculator-id';
 import FaqId from '@/components/faq-id';
-import { AverageVerticalJumpArticleId } from '@/app/id/blog/posts/average-vertical-jump-id';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionFormId } from '@/components/subscription-form-id';
 import { ContactFormId } from '@/components/contact-form-id';
@@ -8,6 +7,8 @@ import HowItWorksId from '@/components/how-it-works-id';
 import { HeaderId } from '@/components/header-id';
 import { FooterId } from '@/components/footer-id';
 import type { Metadata } from 'next';
+import ExerciseLibrary from '@/components/exercise-library';
+import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
   title: 'Kalkulator Dunk | Alat Gratis untuk Menghitung Lompatan Vertikal Anda',
@@ -39,18 +40,8 @@ export default function HomeId() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorId />
-              <section id="article">
-                <Card className="max-w-4xl mx-auto shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-3xl text-center">
-                            Berapa Lompatan Vertikal Rata-rata?
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-6 md:px-8">
-                      <AverageVerticalJumpArticleId />
-                    </CardContent>
-                </Card>
-              </section>
+              <ExerciseLibrary />
+              <ProgressTracker />
               <FaqId />
 
               <section id="about">

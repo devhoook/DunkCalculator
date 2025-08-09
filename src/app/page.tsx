@@ -1,12 +1,13 @@
 import DunkCalculator from '@/components/dunk-calculator';
 import Faq from '@/components/faq';
-import { AverageVerticalJumpArticle } from '@/app/blog/posts/average-vertical-jump';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionForm } from '@/components/subscription-form';
 import { ContactForm } from '@/components/contact-form';
 import HowItWorks from '@/components/how-it-works';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import ExerciseLibrary from '@/components/exercise-library';
+import ProgressTracker from '@/components/progress-tracker';
 
 export default function Home() {
   return (
@@ -30,18 +31,8 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculator />
-              <section id="article">
-                <Card className="max-w-4xl mx-auto shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-3xl text-center">
-                            What's an Average Vertical Jump?
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-6 md:px-8">
-                      <AverageVerticalJumpArticle />
-                    </CardContent>
-                </Card>
-              </section>
+              <ExerciseLibrary />
+              <ProgressTracker />
               <Faq />
 
               <section id="about">

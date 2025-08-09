@@ -1,6 +1,5 @@
 import DunkCalculatorZh from '@/components/dunk-calculator-zh';
 import FaqZh from '@/components/faq-zh';
-import { AverageVerticalJumpArticleZh } from '@/app/zh/blog/posts/average-vertical-jump-zh';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionFormZh } from '@/components/subscription-form-zh';
 import { ContactFormZh } from '@/components/contact-form-zh';
@@ -8,6 +7,8 @@ import HowItWorksZh from '@/components/how-it-works-zh';
 import { HeaderZh } from '@/components/header-zh';
 import { FooterZh } from '@/components/footer-zh';
 import type { Metadata } from 'next';
+import ExerciseLibrary from '@/components/exercise-library';
+import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
   title: '扣篮计算器 | 计算您垂直弹跳的免费工具',
@@ -39,18 +40,8 @@ export default function HomeZh() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorZh />
-              <section id="article">
-                <Card className="max-w-4xl mx-auto shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-3xl text-center">
-                            平均垂直弹跳是多少？
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-6 md:px-8">
-                      <AverageVerticalJumpArticleZh />
-                    </CardContent>
-                </Card>
-              </section>
+              <ExerciseLibrary />
+              <ProgressTracker />
               <FaqZh />
 
               <section id="about">

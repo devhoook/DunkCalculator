@@ -1,6 +1,5 @@
 import DunkCalculatorFa from '@/components/dunk-calculator-fa';
 import FaqFa from '@/components/faq-fa';
-import { AverageVerticalJumpArticleFa } from '@/app/fa/blog/posts/average-vertical-jump-fa';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionFormFa } from '@/components/subscription-form-fa';
 import { ContactFormFa } from '@/components/contact-form-fa';
@@ -8,6 +7,8 @@ import HowItWorksFa from '@/components/how-it-works-fa';
 import { HeaderFa } from '@/components/header-fa';
 import { FooterFa } from '@/components/footer-fa';
 import type { Metadata } from 'next';
+import ExerciseLibrary from '@/components/exercise-library';
+import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
   title: 'ماشین حساب دانک | ابزار رایگان برای محاسبه پرش عمودی شما',
@@ -39,18 +40,8 @@ export default function HomeFa() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorFa />
-              <section id="article">
-                <Card className="max-w-4xl mx-auto shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-3xl text-center">
-                            پرش عمودی متوسط ​​چقدر است؟
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-6 md:px-8">
-                      <AverageVerticalJumpArticleFa />
-                    </CardContent>
-                </Card>
-              </section>
+              <ExerciseLibrary />
+              <ProgressTracker />
               <FaqFa />
 
               <section id="about">

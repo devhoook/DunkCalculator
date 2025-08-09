@@ -42,7 +42,10 @@ export function HeaderFa() {
                 <Link href="/fa#calculator">ماشین حساب</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/fa#article">مقاله</Link>
+                <Link href="/fa#exercises">تمرینات</Link>
+            </Button>
+             <Button variant="ghost" asChild>
+                <Link href="/fa#progress">پیشرفت</Link>
             </Button>
             <Button variant="ghost" asChild>
                 <Link href="/fa#faq">سوالات متداول</Link>

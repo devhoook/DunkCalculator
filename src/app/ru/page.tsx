@@ -1,6 +1,5 @@
 import DunkCalculatorRu from '@/components/dunk-calculator-ru';
 import FaqRu from '@/components/faq-ru';
-import { AverageVerticalJumpArticleRu } from '@/app/ru/blog/posts/average-vertical-jump-ru';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionFormRu } from '@/components/subscription-form-ru';
 import { ContactFormRu } from '@/components/contact-form-ru';
@@ -8,6 +7,8 @@ import HowItWorksRu from '@/components/how-it-works-ru';
 import { HeaderRu } from '@/components/header-ru';
 import { FooterRu } from '@/components/footer-ru';
 import type { Metadata } from 'next';
+import ExerciseLibrary from '@/components/exercise-library';
+import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
   title: 'Калькулятор данков | Бесплатный инструмент для расчета вашего вертикального прыжка',
@@ -39,18 +40,8 @@ export default function HomeRu() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorRu />
-              <section id="article">
-                <Card className="max-w-4xl mx-auto shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-3xl text-center">
-                            Какой средний вертикальный прыжок?
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-6 md:px-8">
-                      <AverageVerticalJumpArticleRu />
-                    </CardContent>
-                </Card>
-              </section>
+              <ExerciseLibrary />
+              <ProgressTracker />
               <FaqRu />
 
               <section id="about">

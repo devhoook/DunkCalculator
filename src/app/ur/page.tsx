@@ -1,6 +1,5 @@
 import DunkCalculatorUr from '@/components/dunk-calculator-ur';
 import FaqUr from '@/components/faq-ur';
-import { AverageVerticalJumpArticleUr } from '@/app/ur/blog/posts/average-vertical-jump-ur';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionFormUr } from '@/components/subscription-form-ur';
 import { ContactFormUr } from '@/components/contact-form-ur';
@@ -8,6 +7,8 @@ import HowItWorksUr from '@/components/how-it-works-ur';
 import { HeaderUr } from '@/components/header-ur';
 import { FooterUr } from '@/components/footer-ur';
 import type { Metadata } from 'next';
+import ExerciseLibrary from '@/components/exercise-library';
+import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
   title: 'ڈنک کیلکولیٹر | اپنی عمودی چھلانگ کا حساب لگانے کے لیے مفت ٹول',
@@ -39,18 +40,8 @@ export default function HomeUr() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorUr />
-              <section id="article">
-                <Card className="max-w-4xl mx-auto shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-3xl text-center">
-                            اوسط عمودی چھلانگ کیا ہے؟
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-6 md:px-8">
-                      <AverageVerticalJumpArticleUr />
-                    </CardContent>
-                </Card>
-              </section>
+              <ExerciseLibrary />
+              <ProgressTracker />
               <FaqUr />
 
               <section id="about">
@@ -72,7 +63,7 @@ export default function HomeUr() {
                           انہوں نے کہا کہ میں نے دفاع پر بہت زیادہ توانائی ضائع کی۔ اس نے میری دھماکہ خیز چھلانگ کی طاقت کی ضرورت کو بھڑکا دیا۔ اب، میرا کھیل دوسرے لڑکوں کو پسینہ چھڑا دیتا ہے- کیونکہ بہتری ڈنکنگ کے ساتھ شروع اور ختم نہیں ہوتی۔
                         </p>
                         <p>
-                          میں نے ان گیم بدلنے والی تکنیکوں کے لیے ہر جگہ تلاش کیا۔ میں آپ کو بتا دوں- میرے لیے کام کرنے والا ایک سسٹم ڈھونڈ کر اچھا لگا۔ یہ کسی اور کے لیے بھی کام کرے گا، چاہے آپ کتنے ہی لمبے کیوں نہ ہوں۔ راز جاننا چاہتے ہیں؟ ٹھیک ہے، یہ سائٹ آپ کو ایلی-اوپ دے گی، اسے جام کرنے کے لیے تیار ہو جائیں۔
+                          میں نے ان گیم بدلنے والی تکنیکوں کے لیے ہر جگہ تلاش کیا۔ میں آپ کو بتا دوں- میرے لیے کام کرنے والا ایک سسٹم ڈھونڈ کر اچھا لگا۔ यह किसी और के لیے भी کام کرے گا، چاہے آپ کتنے ہی لمبے کیوں نہ ہوں۔ راز جاننا چاہتے ہیں؟ ٹھیک ہے، یہ سائٹ آپ کو ایلی-اوپ دے گی، اسے جام کرنے کے لیے تیار ہو جائیں۔
                         </p>
                         <p className="font-semibold text-primary">
                           اور یاد رکھیں، بہترین ٹپس اور راز خصوصی طور پر ہمارے سبسکرائبرز کو ملتے ہیں، لہذا یقینی بنائیں کہ آپ صفحہ کے دائیں جانب فہرست کے لیے سائن اپ کریں۔

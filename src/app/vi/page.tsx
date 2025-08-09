@@ -1,6 +1,5 @@
 import DunkCalculatorVi from '@/components/dunk-calculator-vi';
 import FaqVi from '@/components/faq-vi';
-import { AverageVerticalJumpArticleVi } from '@/app/vi/blog/posts/average-vertical-jump-vi';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionFormVi } from '@/components/subscription-form-vi';
 import { ContactFormVi } from '@/components/contact-form-vi';
@@ -8,6 +7,8 @@ import HowItWorksVi from '@/components/how-it-works-vi';
 import { HeaderVi } from '@/components/header-vi';
 import { FooterVi } from '@/components/footer-vi';
 import type { Metadata } from 'next';
+import ExerciseLibrary from '@/components/exercise-library';
+import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
   title: 'Máy tính úp rổ | Công cụ miễn phí để tính toán cú nhảy thẳng đứng của bạn',
@@ -39,18 +40,8 @@ export default function HomeVi() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorVi />
-              <section id="article">
-                <Card className="max-w-4xl mx-auto shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-3xl text-center">
-                            Thế nào là một cú nhảy thẳng đứng trung bình?
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-6 md:px-8">
-                      <AverageVerticalJumpArticleVi />
-                    </CardContent>
-                </Card>
-              </section>
+              <ExerciseLibrary />
+              <ProgressTracker />
               <FaqVi />
 
               <section id="about">

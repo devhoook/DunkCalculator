@@ -42,7 +42,10 @@ export function HeaderIt() {
                 <Link href="/it#calculator">Calcolatrice</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/it#article">Articolo</Link>
+                <Link href="/it#exercises">Esercizi</Link>
+            </Button>
+             <Button variant="ghost" asChild>
+                <Link href="/it#progress">Progresso</Link>
             </Button>
             <Button variant="ghost" asChild>
                 <Link href="/it#faq">FAQ</Link>

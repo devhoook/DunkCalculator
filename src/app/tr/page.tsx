@@ -1,6 +1,5 @@
 import DunkCalculatorTr from '@/components/dunk-calculator-tr';
 import FaqTr from '@/components/faq-tr';
-import { AverageVerticalJumpArticleTr } from '@/app/tr/blog/posts/average-vertical-jump-tr';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionFormTr } from '@/components/subscription-form-tr';
 import { ContactFormTr } from '@/components/contact-form-tr';
@@ -8,6 +7,8 @@ import HowItWorksTr from '@/components/how-it-works-tr';
 import { HeaderTr } from '@/components/header-tr';
 import { FooterTr } from '@/components/footer-tr';
 import type { Metadata } from 'next';
+import ExerciseLibrary from '@/components/exercise-library';
+import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
   title: 'Smaç Hesaplayıcı | Dikey Sıçramanızı Hesaplamak İçin Ücretsiz Araç',
@@ -39,18 +40,8 @@ export default function HomeTr() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorTr />
-              <section id="article">
-                <Card className="max-w-4xl mx-auto shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-3xl text-center">
-                            Ortalama Dikey Sıçrama Nedir?
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-6 md:px-8">
-                      <AverageVerticalJumpArticleTr />
-                    </CardContent>
-                </Card>
-              </section>
+              <ExerciseLibrary />
+              <ProgressTracker />
               <FaqTr />
 
               <section id="about">

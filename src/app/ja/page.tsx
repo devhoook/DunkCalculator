@@ -1,6 +1,5 @@
 import DunkCalculatorJa from '@/components/dunk-calculator-ja';
 import FaqJa from '@/components/faq-ja';
-import { AverageVerticalJumpArticleJa } from '@/app/ja/blog/posts/average-vertical-jump-ja';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionFormJa } from '@/components/subscription-form-ja';
 import { ContactFormJa } from '@/components/contact-form-ja';
@@ -8,6 +7,8 @@ import HowItWorksJa from '@/components/how-it-works-ja';
 import { HeaderJa } from '@/components/header-ja';
 import { FooterJa } from '@/components/footer-ja';
 import type { Metadata } from 'next';
+import ExerciseLibrary from '@/components/exercise-library';
+import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
   title: 'ダンク計算機 | 垂直跳びを計算する無料ツール',
@@ -39,18 +40,8 @@ export default function HomeJa() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorJa />
-              <section id="article">
-                <Card className="max-w-4xl mx-auto shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-3xl text-center">
-                            平均的な垂直跳びとは？
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-6 md:px-8">
-                      <AverageVerticalJumpArticleJa />
-                    </CardContent>
-                </Card>
-              </section>
+              <ExerciseLibrary />
+              <ProgressTracker />
               <FaqJa />
 
               <section id="about">

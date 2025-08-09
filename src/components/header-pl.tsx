@@ -42,7 +42,10 @@ export function HeaderPl() {
                 <Link href="/pl#calculator">Kalkulator</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/pl#article">Artykuł</Link>
+                <Link href="/pl#exercises">Ćwiczenia</Link>
+            </Button>
+             <Button variant="ghost" asChild>
+                <Link href="/pl#progress">Postęp</Link>
             </Button>
             <Button variant="ghost" asChild>
                 <Link href="/pl#faq">FAQ</Link>

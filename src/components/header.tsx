@@ -42,7 +42,10 @@ export function Header() {
                 <Link href="/#calculator">Calculator</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/#article">Article</Link>
+                <Link href="/#exercises">Exercises</Link>
+            </Button>
+             <Button variant="ghost" asChild>
+                <Link href="/#progress">Progress</Link>
             </Button>
             <Button variant="ghost" asChild>
                 <Link href="/#faq">FAQ</Link>

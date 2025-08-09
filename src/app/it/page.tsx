@@ -1,6 +1,5 @@
 import DunkCalculatorIt from '@/components/dunk-calculator-it';
 import FaqIt from '@/components/faq-it';
-import { AverageVerticalJumpArticleIt } from '@/app/it/blog/posts/average-vertical-jump-it';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionFormIt } from '@/components/subscription-form-it';
 import { ContactFormIt } from '@/components/contact-form-it';
@@ -8,6 +7,8 @@ import HowItWorksIt from '@/components/how-it-works-it';
 import { HeaderIt } from '@/components/header-it';
 import { FooterIt } from '@/components/footer-it';
 import type { Metadata } from 'next';
+import ExerciseLibrary from '@/components/exercise-library';
+import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
   title: 'Calcolatore di schiacciate | Strumento gratuito per calcolare il tuo salto verticale',
@@ -39,18 +40,8 @@ export default function HomeIt() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorIt />
-              <section id="article">
-                <Card className="max-w-4xl mx-auto shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-3xl text-center">
-                            Cos'è un salto verticale medio?
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-6 md:px-8">
-                      <AverageVerticalJumpArticleIt />
-                    </CardContent>
-                </Card>
-              </section>
+              <ExerciseLibrary />
+              <ProgressTracker />
               <FaqIt />
 
               <section id="about">

@@ -42,7 +42,10 @@ export function HeaderJa() {
                 <Link href="/ja#calculator">計算機</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/ja#article">記事</Link>
+                <Link href="/ja#exercises">エクササイズ</Link>
+            </Button>
+             <Button variant="ghost" asChild>
+                <Link href="/ja#progress">進捗</Link>
             </Button>
             <Button variant="ghost" asChild>
                 <Link href="/ja#faq">FAQ</Link>

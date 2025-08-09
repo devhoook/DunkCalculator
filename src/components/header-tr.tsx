@@ -42,7 +42,10 @@ export function HeaderTr() {
                 <Link href="/tr#calculator">Hesaplayıcı</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/tr#article">Makale</Link>
+                <Link href="/tr#exercises">Egzersizler</Link>
+            </Button>
+             <Button variant="ghost" asChild>
+                <Link href="/tr#progress">İlerleme</Link>
             </Button>
             <Button variant="ghost" asChild>
                 <Link href="/tr#faq">SSS</Link>

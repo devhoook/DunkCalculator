@@ -42,7 +42,10 @@ export function HeaderUr() {
                 <Link href="/ur#calculator">کیلکولیٹر</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/ur#article">مضمون</Link>
+                <Link href="/ur#exercises">مشقیں</Link>
+            </Button>
+             <Button variant="ghost" asChild>
+                <Link href="/ur#progress">پیش رفت</Link>
             </Button>
             <Button variant="ghost" asChild>
                 <Link href="/ur#faq">اکثر پوچھے گئے سوالات</Link>

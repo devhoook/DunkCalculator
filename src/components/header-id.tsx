@@ -42,7 +42,10 @@ export function HeaderId() {
                 <Link href="/id#calculator">Kalkulator</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/id#article">Artikel</Link>
+                <Link href="/id#exercises">Latihan</Link>
+            </Button>
+             <Button variant="ghost" asChild>
+                <Link href="/id#progress">Kemajuan</Link>
             </Button>
             <Button variant="ghost" asChild>
                 <Link href="/id#faq">FAQ</Link>

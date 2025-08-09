@@ -1,6 +1,5 @@
 import DunkCalculatorHi from '@/components/dunk-calculator-hi';
 import FaqHi from '@/components/faq-hi';
-import { AverageVerticalJumpArticleHi } from '@/app/hi/blog/posts/average-vertical-jump-hi';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionFormHi } from '@/components/subscription-form-hi';
 import { ContactFormHi } from '@/components/contact-form-hi';
@@ -8,6 +7,8 @@ import HowItWorksHi from '@/components/how-it-works-hi';
 import { HeaderHi } from '@/components/header-hi';
 import { FooterHi } from '@/components/footer-hi';
 import type { Metadata } from 'next';
+import ExerciseLibrary from '@/components/exercise-library';
+import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
   title: 'डंक कैलकुलेटर | अपनी वर्टिकल जंप की गणना के लिए मुफ्त उपकरण',
@@ -39,18 +40,8 @@ export default function HomeHi() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorHi />
-              <section id="article">
-                <Card className="max-w-4xl mx-auto shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-3xl text-center">
-                            औसत वर्टिकल जंप क्या है?
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-6 md:px-8">
-                      <AverageVerticalJumpArticleHi />
-                    </CardContent>
-                </Card>
-              </section>
+              <ExerciseLibrary />
+              <ProgressTracker />
               <FaqHi />
 
               <section id="about">

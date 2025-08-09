@@ -1,6 +1,5 @@
 import DunkCalculatorKo from '@/components/dunk-calculator-ko';
 import FaqKo from '@/components/faq-ko';
-import { AverageVerticalJumpArticleKo } from '@/app/ko/blog/posts/average-vertical-jump-ko';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionFormKo } from '@/components/subscription-form-ko';
 import { ContactFormKo } from '@/components/contact-form-ko';
@@ -8,6 +7,8 @@ import HowItWorksKo from '@/components/how-it-works-ko';
 import { HeaderKo } from '@/components/header-ko';
 import { FooterKo } from '@/components/footer-ko';
 import type { Metadata } from 'next';
+import ExerciseLibrary from '@/components/exercise-library';
+import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
   title: '덩크 계산기 | 수직 점프를 계산하는 무료 도구',
@@ -39,18 +40,8 @@ export default function HomeKo() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorKo />
-              <section id="article">
-                <Card className="max-w-4xl mx-auto shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-3xl text-center">
-                            평균적인 수직 점프란 무엇입니까?
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-6 md:px-8">
-                      <AverageVerticalJumpArticleKo />
-                    </CardContent>
-                </Card>
-              </section>
+              <ExerciseLibrary />
+              <ProgressTracker />
               <FaqKo />
 
               <section id="about">

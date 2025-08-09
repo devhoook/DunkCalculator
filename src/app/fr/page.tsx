@@ -1,6 +1,5 @@
 import DunkCalculatorFr from '@/components/dunk-calculator-fr';
 import FaqFr from '@/components/faq-fr';
-import { AverageVerticalJumpArticleFr } from '@/app/fr/blog/posts/average-vertical-jump-fr';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionFormFr } from '@/components/subscription-form-fr';
 import { ContactFormFr } from '@/components/contact-form-fr';
@@ -8,6 +7,8 @@ import HowItWorksFr from '@/components/how-it-works-fr';
 import { HeaderFr } from '@/components/header-fr';
 import { FooterFr } from '@/components/footer-fr';
 import type { Metadata } from 'next';
+import ExerciseLibrary from '@/components/exercise-library';
+import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
   title: 'Calculateur de Dunk | Outil Gratuit pour Calculer Votre Saut Vertical',
@@ -39,18 +40,8 @@ export default function HomeFr() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorFr />
-              <section id="article">
-                <Card className="max-w-4xl mx-auto shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-3xl text-center">
-                            Qu'est-ce qu'un Saut Vertical Moyen ?
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-6 md:px-8">
-                      <AverageVerticalJumpArticleFr />
-                    </CardContent>
-                </Card>
-              </section>
+              <ExerciseLibrary />
+              <ProgressTracker />
               <FaqFr />
 
               <section id="about">

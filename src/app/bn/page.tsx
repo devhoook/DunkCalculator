@@ -1,6 +1,5 @@
 import DunkCalculatorBn from '@/components/dunk-calculator-bn';
 import FaqBn from '@/components/faq-bn';
-import { AverageVerticalJumpArticleBn } from '@/app/bn/blog/posts/average-vertical-jump-bn';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionFormBn } from '@/components/subscription-form-bn';
 import { ContactFormBn } from '@/components/contact-form-bn';
@@ -8,6 +7,8 @@ import HowItWorksBn from '@/components/how-it-works-bn';
 import { HeaderBn } from '@/components/header-bn';
 import { FooterBn } from '@/components/footer-bn';
 import type { Metadata } from 'next';
+import ExerciseLibrary from '@/components/exercise-library';
+import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
   title: 'ডান্ক ক্যালকুলেটর | আপনার উল্লম্ব লাফ গণনা করার জন্য বিনামূল্যে টুল',
@@ -39,18 +40,8 @@ export default function HomeBn() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorBn />
-              <section id="article">
-                <Card className="max-w-4xl mx-auto shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-3xl text-center">
-                            একটি গড় উল্লম্ব লাফ কি?
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-6 md:px-8">
-                      <AverageVerticalJumpArticleBn />
-                    </CardContent>
-                </Card>
-              </section>
+              <ExerciseLibrary />
+              <ProgressTracker />
               <FaqBn />
 
               <section id="about">

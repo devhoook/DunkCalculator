@@ -1,6 +1,5 @@
 import DunkCalculatorPt from '@/components/dunk-calculator-pt';
 import FaqPt from '@/components/faq-pt';
-import { AverageVerticalJumpArticlePt } from '@/app/pt/blog/posts/average-vertical-jump-pt';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionFormPt } from '@/components/subscription-form-pt';
 import { ContactFormPt } from '@/components/contact-form-pt';
@@ -8,6 +7,8 @@ import HowItWorksPt from '@/components/how-it-works-pt';
 import { HeaderPt } from '@/components/header-pt';
 import { FooterPt } from '@/components/footer-pt';
 import type { Metadata } from 'next';
+import ExerciseLibrary from '@/components/exercise-library';
+import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
   title: 'Calculadora de Enterradas | Ferramenta Gratuita para Calcular seu Salto Vertical',
@@ -39,18 +40,8 @@ export default function HomePt() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorPt />
-              <section id="article">
-                <Card className="max-w-4xl mx-auto shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-3xl text-center">
-                            Qual é um Salto Vertical Médio?
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-6 md:px-8">
-                      <AverageVerticalJumpArticlePt />
-                    </CardContent>
-                </Card>
-              </section>
+              <ExerciseLibrary />
+              <ProgressTracker />
               <FaqPt />
 
               <section id="about">

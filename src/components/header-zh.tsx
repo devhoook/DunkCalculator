@@ -42,7 +42,10 @@ export function HeaderZh() {
                 <Link href="/zh#calculator">计算器</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/zh#article">文章</Link>
+                <Link href="/zh#exercises">练习</Link>
+            </Button>
+             <Button variant="ghost" asChild>
+                <Link href="/zh#progress">进展</Link>
             </Button>
             <Button variant="ghost" asChild>
                 <Link href="/zh#faq">常见问题</Link>

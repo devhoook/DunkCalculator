@@ -1,6 +1,5 @@
 import DunkCalculatorTh from '@/components/dunk-calculator-th';
 import FaqTh from '@/components/faq-th';
-import { AverageVerticalJumpArticleTh } from '@/app/th/blog/posts/average-vertical-jump-th';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { SubscriptionFormTh } from '@/components/subscription-form-th';
 import { ContactFormTh } from '@/components/contact-form-th';
@@ -8,6 +7,8 @@ import HowItWorksTh from '@/components/how-it-works-th';
 import { HeaderTh } from '@/components/header-th';
 import { FooterTh } from '@/components/footer-th';
 import type { Metadata } from 'next';
+import ExerciseLibrary from '@/components/exercise-library';
+import ProgressTracker from '@/components/progress-tracker';
 
 export const metadata: Metadata = {
   title: 'เครื่องคำนวณการดั๊งค์ | เครื่องมือฟรีสำหรับคำนวณการกระโดดแนวดิ่งของคุณ',
@@ -39,18 +40,8 @@ export default function HomeTh() {
           <div className="container mx-auto px-4">
             <div className="space-y-12 md:space-y-16 py-12">
               <DunkCalculatorTh />
-              <section id="article">
-                <Card className="max-w-4xl mx-auto shadow-lg">
-                    <CardHeader>
-                        <CardTitle className="font-headline text-3xl text-center">
-                            การกระโดดแนวดิ่งโดยเฉลี่ยคืออะไร?
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="px-6 md:px-8">
-                      <AverageVerticalJumpArticleTh />
-                    </CardContent>
-                </Card>
-              </section>
+              <ExerciseLibrary />
+              <ProgressTracker />
               <FaqTh />
 
               <section id="about">
