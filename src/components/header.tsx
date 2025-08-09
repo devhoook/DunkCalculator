@@ -37,9 +37,6 @@ export function Header() {
                 <Link href="/">Calculator</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/about">About</Link>
-            </Button>
-            <Button variant="ghost" asChild>
                 <Link href="/contact">Contact</Link>
             </Button>
             </nav>
