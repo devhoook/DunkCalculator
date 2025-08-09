@@ -65,7 +65,9 @@ export default function HomeEs() {
                     </p>
                   </div>
                   <aside className="md:col-span-1">
-                    <SubscriptionFormEs />
+                    <div className="sticky top-24">
+                        <SubscriptionFormEs />
+                    </div>
                   </aside>
                 </div>
               </CardContent>
