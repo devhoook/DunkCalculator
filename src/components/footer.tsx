@@ -8,6 +8,8 @@ export function Footer() {
                     <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
                     <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
                     <Link href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
+                    <Link href="/cookies-policy" className="hover:text-primary transition-colors">Cookies Policy</Link>
+                    <Link href="/dmca" className="hover:text-primary transition-colors">DMCA</Link>
                 </div>
                 <div className="text-center text-sm">
                     <p>&copy; {new Date().getFullYear()} FreeDunkCalculator.com. All Rights Reserved.</p>
