@@ -32,12 +32,21 @@ export function Header() {
             </span>
         </Link>
         <div className="flex items-center gap-2">
-            <nav className="hidden md:flex gap-2">
+            <nav className="hidden md:flex gap-1">
             <Button variant="ghost" asChild>
-                <Link href="/">Calculator</Link>
+                <Link href="/#calculator">Calculator</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/contact">Contact</Link>
+                <Link href="/#article">Article</Link>
+            </Button>
+            <Button variant="ghost" asChild>
+                <Link href="/#faq">FAQ</Link>
+            </Button>
+            <Button variant="ghost" asChild>
+                <Link href="/#about">About</Link>
+            </Button>
+            <Button variant="ghost" asChild>
+                <Link href="/#contact">Contact</Link>
             </Button>
             </nav>
             <ModeToggle />
