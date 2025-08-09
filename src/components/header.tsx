@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { ModeToggle } from './mode-toggle';
 
 const BasketballIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg
@@ -30,20 +31,23 @@ export function Header() {
                 FreeDunkCalculator.com
             </span>
         </Link>
-        <nav className="hidden md:flex gap-2">
-          <Button variant="ghost" asChild>
-            <Link href="/">Calculator</Link>
-          </Button>
-          <Button variant="ghost" asChild>
-            <Link href="/about">About</Link>
-          </Button>
-          <Button variant="ghost" asChild>
-            <Link href="/blog">Blog</Link>
-          </Button>
-          <Button variant="ghost" asChild>
-            <Link href="/contact">Contact</Link>
-          </Button>
-        </nav>
+        <div className="flex items-center gap-2">
+            <nav className="hidden md:flex gap-2">
+            <Button variant="ghost" asChild>
+                <Link href="/">Calculator</Link>
+            </Button>
+            <Button variant="ghost" asChild>
+                <Link href="/about">About</Link>
+            </Button>
+            <Button variant="ghost" asChild>
+                <Link href="/blog">Blog</Link>
+            </Button>
+            <Button variant="ghost" asChild>
+                <Link href="/contact">Contact</Link>
+            </Button>
+            </nav>
+            <ModeToggle />
+        </div>
       </div>
     </header>
   );
