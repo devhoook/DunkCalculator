@@ -25,6 +25,10 @@ export const metadata: Metadata = {
       'ur': '/ur',
       'de': '/de',
       'ja': '/ja',
+      'tr': '/tr',
+      'ko': '/ko',
+      'vi': '/vi',
+      'it': '/it',
     },
   },
 };
