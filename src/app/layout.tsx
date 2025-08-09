@@ -19,6 +19,12 @@ export const metadata: Metadata = {
       'hi': '/hi',
       'ar': '/ar',
       'fr': '/fr',
+      'bn': '/bn',
+      'pt': '/pt',
+      'ru': '/ru',
+      'ur': '/ur',
+      'de': '/de',
+      'ja': '/ja',
     },
   },
 };

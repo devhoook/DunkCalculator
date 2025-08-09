@@ -80,6 +80,24 @@ export function HeaderFr() {
                 <DropdownMenuItem asChild>
                     <Link href="/fr">Français</Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                    <Link href="/bn">বাংলা</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                    <Link href="/pt">Português</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                    <Link href="/ru">Русский</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                    <Link href="/ur">اردو</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                    <Link href="/de">Deutsch</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                    <Link href="/ja">日本語</Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <ModeToggle />

@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ModeToggle } from './mode-toggle';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
 import { Globe } from 'lucide-react';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
 
 const BasketballIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg
@@ -23,42 +23,42 @@ const BasketballIcon = (props: React.SVGProps<SVGSVGElement>) => (
     </svg>
   );
 
-export function Header() {
+export function HeaderPt() {
   return (
     <header className="py-4 border-b sticky top-0 bg-background/95 backdrop-blur-sm z-10">
       <div className="container mx-auto flex justify-between items-center px-4">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/pt" className="flex items-center gap-2">
             <BasketballIcon className="h-8 w-8 text-primary" />
             <span className="text-xl font-bold font-headline text-primary">
-                FreeDunkCalculator.com
+                CalculadoraDeEnterradas.com
             </span>
         </Link>
         <div className="flex items-center gap-2">
             <nav className="hidden md:flex gap-1">
             <Button variant="ghost" asChild>
-                <Link href="/#how-it-works">How It Works</Link>
+                <Link href="/pt#how-it-works">Como Funciona</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/#calculator">Calculator</Link>
+                <Link href="/pt#calculator">Calculadora</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/#article">Article</Link>
+                <Link href="/pt#article">Artigo</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/#faq">FAQ</Link>
+                <Link href="/pt#faq">FAQ</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/#about">About</Link>
+                <Link href="/pt#about">Sobre</Link>
             </Button>
             <Button variant="ghost" asChild>
-                <Link href="/#contact">Contact</Link>
+                <Link href="/pt#contact">Contato</Link>
             </Button>
             </nav>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" size="icon">
                   <Globe className="h-[1.2rem] w-[1.2rem]" />
-                  <span className="sr-only">Choose language</span>
+                  <span className="sr-only">Escolher idioma</span>
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
